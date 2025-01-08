@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2(c) DOC</title>
+    <style>
+      table,th,td,tr{
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Registraton Form</h1>
+    
+    <table style="width: 500px;" align="center">
+        <caption align="center">Fill Your Details</caption>
+        <tr>
+            <td><label for="name" >Full name:</label></td>
+            <td><input type="text" id="name" value="enter your name"  </td>
+        </tr>
+        <tr>
+            <td><label for="password">Password: </label></td>
+            <td><input type="password" id="password" placeholder="Enter your Password" ></td>
+        </tr>
+        <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="number" id="age" ></td>
+        </tr>    
+        <tr>
+            <td><label for="name" >Date of Birth</label></td>
+            <td><input type="date" placeholder="dd-mm-yyyy"></td>
+
+        </tr>
+        <tr>
+            <td><label for="name" >Gender</label></td>
+            <td>
+                <input type="radio" name="Gender" value="Male" >Male
+                <input type="radio" name="Gender" value="Female" >Female
+                <input type="radio" name="Gender" value="Other" >Other
+            </td>
+        </tr>
+        <tr>
+            <td><label for="name">Hobbies</label></td>
+            <td>
+                <input type="checkbox"  value="Reading" >Reading<br>
+                <input type="checkbox"  value="Reading" >Sports<br>
+                <input type="checkbox"  value="Reading" >Traveling
+            </td>
+        </tr>
+        <tr>
+            <td><label for="name">Country</label></td>
+            <td><select>
+                <option value="enter your country">Enter your Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="name">About Yourself:</label></td>
+            <td><textarea name="Address" rows="5" cols="20" placeholder="write about Yourself..."></textarea></td>
+        </tr>
+    </table>
+    <form align="center">
+        <button><input type="submit" value="submit"></button>
+        <button><input type="reset" value="reset"></button> 
+    </form>
+</body>
+</html>
