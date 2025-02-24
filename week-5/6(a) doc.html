@@ -19,21 +19,28 @@
         <script>
             function display()
             {
-                document.getElementById("text"),innerHTML="javascript";
+                document.getElementById("text").innerHTML="internal_javascript";
 
             }
         </script>
     </head>
     <body>
-        <h1 id="text">JavaScript Enbedding Example</h1>
-        <p>this text will change using internal JavaScript.</p>
-        <button type="button" onclick="display()">Change Text((Internal JS)</button>
-
-        <p>this text will change using external JavaScript.</p>
-        <button type="button" onclick="display()">Change Text(External JS)</button>
-
+        <h1>JavaScript Enbedding Example</h1>
+        <p  id="text">this text will change using internal JavaScript.</p>
+        <button type="button" onclick="display()">Change Text(Internal JS)</button>
+        <script src="script.js"></script>
+        <p id="ex-text">this text will change using external JavaScript.</p>
+        <button type="button" onclick="exdisplay()">Change Text(External JS)</button>
+        
     </body>
 </html>
 
+<script>
+    function exdisplay()
+{
+    document.getElementById("ex-text").innerHTML="external_javascript";
+
+}
+</script>
 
 
